@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Поле ввода названия книги -->
+    <EditText
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название"
+        android:inputType="text" />
+
+    <!-- Поле ввода автора -->
+    <EditText
+        android:id="@+id/authorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Автор"
+        android:inputType="text" />
+
+    <!-- Кнопка для добавления книги -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Добавить книгу" />
+
+    <!-- Кнопка для обновления книги -->
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Обновить книгу" />
+
+    <!-- Кнопка для удаления книги -->
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Удалить книгу" />
+
+    <!-- Разделитель для красоты -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="8dp"
+        android:background="?android:attr/listDivider" />
+
+    <!-- Список книг -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="?android:attr/listDivider"
+        android:dividerHeight="1dp"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
